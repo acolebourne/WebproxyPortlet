@@ -41,10 +41,17 @@
         <logbackVersion>1.0.13</logbackVersion>
         <slf4jVersion>1.7.5</slf4jVersion>
         <mockito.version>1.9.5</mockito.version>
+        <uportal-search-api.version>4.0.1</uportal-search-api.version>
+        <httpclient.version>4.2.5</httpclient.version> 
     </properties>
 
     <dependencyManagement>
         <dependencies>
+             <dependency>
+                <groupId>org.jasig.portal</groupId>
+                <artifactId>uportal-search-api</artifactId>
+                <version>${uportal-search-api.version}</version>
+            </dependency>
             <dependency>
                 <groupId>commons-io</groupId>
                 <artifactId>commons-io</artifactId>
@@ -81,7 +88,7 @@
             <dependency>
                 <groupId>org.apache.httpcomponents</groupId>
                 <artifactId>httpclient</artifactId>
-                <version>4.2</version>
+                <version>${httpclient.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.codehaus.jackson</groupId>
@@ -312,6 +319,10 @@
             <scope>runtime</scope>
         </dependency>
         <!-- End of logging section -->
+         <dependency>
+		<groupId>org.jasig.portal</groupId>
+		<artifactId>uportal-search-api</artifactId>
+	 </dependency>
     </dependencies>
 
     <build>

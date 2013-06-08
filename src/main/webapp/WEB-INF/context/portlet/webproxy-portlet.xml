@@ -41,6 +41,10 @@
             </list>
         </property>
     </bean>
+    
+	<bean id="contentSearchProvider" class="org.jasig.portlet.proxy.service.proxy.search.GSASearchImpl">
+	    
+	</bean>
 
     <util:map id="pageCharacterEncodings">
         <entry key="UTF-8" value="UTF-8 (standard for HTML5)"/>
